@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Creating a Contact</title>
+
+<!--these scripts can be used from their native CDN because they only control the appearance of the form -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<!-- comment this out for now since we will have a local copy stored with the application for logging in.
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jsforce/1.7.0/jsforce.min.js"></script>
+  -->
+  
+ 
+  
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="jumbotron">
+<h1>Towson University Hillel<h2>
+<h2>Contact Creation Form<h2>
+</div>
+
+<form action="" method="post" enctype="multipart/form-data" name="createcontact">
+
+<fieldset>
+
+<legend> Contact Information: </legend>
+
+Contact Record Type:<br>
+<select name="recordtype">
+<option value="Hillel Student Contact Record">Hillel Student Contact Record</option>
+<option value="Hillel Non-Student Contact Record">Hillel Non-Student Contact Record</option>
+</select>
+<br>
+
+First Name:											<br>
+<input type="text" name="firstname">				<br>
+
+Last Name: 											<br>
+<input type="text" name="lastname">					<br>
+
+
+Birthday:											<br>
+<input type="date" name="birthday">					<br>
+
+Account Name:<br>
+<select name="account">
+<option value="Towson University">Towson University</option>
+<option value="Hillel of Towson University">Hillel of Towson University</option>
+</select>
+<br>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend> Phone and Email: </legend>
+
+Work Email:											<br>
+<input type="email" name="workemail">				<br>
+
+Personal Email:										<br>
+<input type="email" name="personalemail">			<br>
+
+Alternate Email:									<br>
+<input type="email" name="altemail">				<br>
+
+Mobile Number:										<br>
+<input type="tel" name="primaryphone">				<br>
+
+Home Phone Number:									<br>
+<input type="tel" name="homephone">					<br>
+
+Work Phone:											<br>
+<input type="tel" name="workphone">					<br>
+
+Other Phone:										<br>
+<input type="tel" name="otherphone">				<br>
+
+Preferred Phone:<br>
+<select name="preferredphone">
+<option value="Mobile">Mobile Number</option>
+<option value="Work Phone">Work Phone</option>
+<option value="Home Phone">Home Phone Number</option>
+</select>
+<br>
+
+Preferred Email:<br>
+<select name="preferredemail">
+<option value="Personal">Personal Email</option>
+<option value="Work">Work Email</option>
+<option value="Alternate">Alternate Email</option>
+</select>
+<br>
+
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Additional Information</legend>
+
+Gender:												<br>
+<select name="gender">					
+<option value="Male">Male</option>		
+<option value="Female">Female</option>	
+<option value="Other">Other</option>	
+</select>
+<br>
+
+Jewish:												<br>
+<select name="jewish">
+<option value="Yes">Yes</option>
+<option value="No">No<option>
+</select>
+<br>
+
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Form Actions</legend>
+<br>
+<input type="submit" value="Create Contact">
+<input type="reset" value="Reset Form">
+</fieldset>
+
+</form>
+
+</div>
+
+</body>
+
+
+</html>
