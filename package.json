@@ -1,7 +1,7 @@
 {
   "name": "towsonformcontact",
   "version": "1.0.0",
-  "description": "form to create contacts in salesforce for towson",
+  "description": "Display the contact creation form",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,20 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nhlutterodt/form.git"
+    "url": "https://github.com/nhlutterodt/form.git"
   },
-  "keywords": [
-    "forms",
-    "towson"
-  ],
-  "author": "neils haldane-lutterodt",
+  "author": "Neils Haldane-Lutterodt",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nhlutterodt/form/issues"
-  },
-  "homepage": "https://github.com/nhlutterodt/form#readme",
-  "dependencies": {
-    "formidable": "^1.1.1"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/nhlutterodt/form"
 }
